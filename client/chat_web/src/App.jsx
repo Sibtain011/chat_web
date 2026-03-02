@@ -30,6 +30,10 @@ setMessages(prev=>[...prev,msg]);
 
 },[joined]);
 
+if (!API) {
+    console.error("VITE_API_URL is not set");
+  }
+
 
 const sendMessage = ()=>{
 
